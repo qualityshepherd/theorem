@@ -11,7 +11,13 @@
 * run `npm test`
 * `npm run` to see more options
 
-## Notes:
+## Testplan
+- [x] sign in
+- [x] checkout/shopping cart
+- [x] search
+
+
+## Notes
 
 ### If I had more time:
 - would use API to add available products to cart

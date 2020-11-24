@@ -1,8 +1,12 @@
 import { Selector as $, t } from 'testcafe';
 import basePage from './basePage';
+import search from './searchModule';
 
 const homePage = {
   url: 'index.php',
+  // add modules
+  search,
+
   indexDiv: $('#index'),
   featuredProducts: $('#homefeatured li'),
   addToCartBtns: $('.ajax_add_to_cart_button'),

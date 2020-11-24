@@ -3,7 +3,7 @@ import basePage from './basePage';
 
 /**
  * search can exist on multiple pages so we make it a module
- * that we can then require on multiple pages
+ * that we can then use it on those pages
  */
 const searchModule = {
   box: $('#search_query_top'),
@@ -12,8 +12,8 @@ const searchModule = {
   noResultsMsg: $('.alert-warning'),
 
   /**
-   * Search blog posts
-   * @param  {string}
+   * search for product
+   * @param {string}
    */
   async forText(text) {
     await t

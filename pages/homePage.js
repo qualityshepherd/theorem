@@ -4,7 +4,7 @@ import search from './searchModule';
 
 const homePage = {
   url: 'index.php',
-  // add modules
+  // add shared modules
   search,
 
   indexDiv: $('#index'),

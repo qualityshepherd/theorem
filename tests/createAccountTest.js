@@ -8,6 +8,7 @@ fixture `Create Account`.beforeEach(async t => {
 
 test('should create a new account', async t => {
   await authenticationPage.createAccount(data.email);
+  // FUTURE: break out data to just want we need...
   await authenticationPage.addAccountInfo(data);
 
   await t.expect(accountPage.myAccount.visible).ok();

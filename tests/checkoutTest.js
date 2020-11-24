@@ -12,5 +12,6 @@ test('should check out successfully', async t => {
   await cartPage.goto();
   await cartPage.checkout();
 
+  // FUTURE: make assert more robust... eg. verify order ID?
   await t.expect(cartPage.orderSuccessMsg.visible).ok();
 });

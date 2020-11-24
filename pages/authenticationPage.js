@@ -30,12 +30,22 @@ const authenticationPage = {
 
   errorMsg: $('.alert-danger'),
 
+  /**
+   * create an account
+   * @param  {string} email
+   */
   async createAccount(email) {
     await t
       .typeText(this.create.email, email)
       .click(this.create.submitBtn)
   },
 
+  /**
+   * add required information to finish account creation
+   * @param {obj} data
+   *
+   * NOTE: all fields are required in the app
+   */
   async addAccountInfo(data) {
     await t
       .typeText(this.info.first, data.first)

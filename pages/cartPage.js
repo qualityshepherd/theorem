@@ -4,7 +4,7 @@ import basePage from './basePage';
 const cartPage = {
   url: 'index.php?controller=order',
 
-  // the series of checkout buttons should probably be organized a bit better
+  // FUTURE: the series of checkout buttons should probably be organized a bit better
   // to differentiate them and make them easier to reason about...
   standardCheckoutBtn: $('.standard-checkout'), // 1st proceed to checkout btn
   proceedTocheckoutBtn: $('[name="processAddress"]'), // step=1
@@ -13,6 +13,9 @@ const cartPage = {
   confirmOrderBtn: $('#cart_navigation > button'), // payment
   orderSuccessMsg: $('.alert-success'), // profit!
 
+  /**
+   * complete an order
+   */
   async checkout() {
     await this.standardCheckoutBtn.visible;
     await t

@@ -18,7 +18,9 @@
 - [x] checkout/shopping cart
 - [x] search
 - [x] create account
+- [x] browse categories
 - [x] _(freebie)_ runs on [Codeship CI](https://codeship.com/)
+- [ ] social media sharing
 
 ## If I had more time:
 - would use API to add available products to cart

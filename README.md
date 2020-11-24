@@ -11,3 +11,8 @@
 * run `npm test`
 * `npm run` to see more options
 
+## Notes:
+
+### If I had more time:
+- would use API to add available products to cart
+- would confirm order _perhaps by order id in url?_ or something more robust that an alert msg

@@ -9,6 +9,7 @@
   "scripts": {
     "testcafe": "./node_modules/.bin/testcafe",
     "test": "npm run testcafe chrome tests/",
+    "firefox": "npm run testcafe firefox tests/",
     "headless": "npm run testcafe -- -c 2 chrome:headless tests/"
   },
   "author": "brine",

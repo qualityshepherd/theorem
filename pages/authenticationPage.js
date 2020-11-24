@@ -15,12 +15,39 @@ const authenticationPage = {
     submitBtn:  $('#SubmitCreate'),
   },
 
+  info: {
+    first: $('#customer_firstname'),
+    last: $('#customer_lastname'),
+    password: $('#passwd'),
+    address: $('#address1'),
+    city: $('#city'),
+    stateSelect: $('#id_state'),
+    stateOption: $('option'),
+    zip: $('#postcode'),
+    mobile: $('#phone_mobile'),
+    submit: $('#submitAccount')
+  },
+
   errorMsg: $('.alert-danger'),
 
   async createAccount(email) {
     await t
       .typeText(this.create.email, email)
       .click(this.create.submitBtn)
+  },
+
+  async addAccountInfo(data) {
+    await t
+      .typeText(this.info.first, data.first)
+      .typeText(this.info.last, data.last)
+      .typeText(this.info.password, data.password)
+      .typeText(this.info.address, data.address)
+      .typeText(this.info.city, data.city)
+      .click(this.info.stateSelect)
+      .click(this.info.stateOption.withText(data.state))
+      .typeText(this.info.zip, data.zip)
+      .typeText(this.info.mobile, data.mobile)
+      .click(this.info.submit);
   },
 
   async login(email, password) {

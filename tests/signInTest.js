@@ -6,5 +6,5 @@ fixture `Sign In`;
 test('should sign into Automation Practice', async t => {
   await t
     .useRole(user)
-    .expect(accountPage.pageHeading.exists).ok();
+    .expect(accountPage.myAccount.exists).ok();
 });

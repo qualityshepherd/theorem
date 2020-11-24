@@ -3,6 +3,6 @@ import basePage from './basePage';
 
 const accountPage = {
   url: 'index.php?controller=my-account',
-  pageHeading: $('h1.page-heading')
+  myAccount: $('#my-account')
 }
 export default {...basePage, ...accountPage}

@@ -8,8 +8,10 @@
 2. install `npm i`
 
 ## Run 'Em
-* run `npm test`
+* `npm test` runs all tests in a single browser window
+* `npm run headless` runs all tests _headlessly_ in parallel (x2)
 * `npm run` to see more options
+* custom: `npm run testcafe -- [options] [browser] [tests]`
 
 ## Testplan
 - [x] sign in
@@ -17,8 +19,6 @@
 - [x] search
 
 
-## Notes
-
-### If I had more time:
+## If I had more time:
 - would use API to add available products to cart
 - would confirm order _perhaps by order id in url?_ or something more robust that an alert msg

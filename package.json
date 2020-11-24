@@ -1,0 +1,20 @@
+{
+  "name": "theorem",
+  "version": "1.0.0",
+  "description": "An E2E test exercise... ",
+  "engines": {
+    "node": "14.15.1"
+  },
+  "main": "index.js",
+  "scripts": {
+    "testcafe": "./node_modules/.bin/testcafe",
+    "test": "npm run testcafe chrome tests/",
+    "headless": "npm run testcafe -- -c 2 chrome:headless tests/"
+  },
+  "author": "brine",
+  "license": "MIT",
+  "dependencies": {
+    "chance": "^1.1.7",
+    "testcafe": "^1.9.4"
+  }
+}

@@ -26,7 +26,8 @@
 - [ ] ~social media sharing~ :(
 
 ## If I had more time:
-- would use API to add available products to cart
+- would use API to add available products to cart and just general data
 - would confirm order _perhaps by order id in url?_ or something more robust that an alert msg
+- would like to just generally improve the tests (time limit is a thing though)
 
 ![Test Output](data/test_output.png)
